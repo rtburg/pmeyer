@@ -1,0 +1,1274 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>CARstat: Tools</title>
+<script LANGUAGE="JavaScript">  
+
+<!-- Hide from old browsers;-)-->
+
+browserName = navigator.appName;
+
+browserVer = parseInt(navigator.appVersion);
+
+        if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+
+		else if (browserName == "Microsoft Internet Explorer" && 
+
+		browserVer >= 3) version = "n3";
+
+	else version ="x";
+
+if (version == "n3")
+
+{ 
+
+ image1b = new Image; 
+
+ image1b.src="home2.gif";      
+
+ image1 = new Image;
+
+ image1.src="home1.gif";
+
+}
+
+if (version == "n3")
+
+{ 
+
+ image2b = new Image; 
+
+ image2b.src="intro2.gif";      
+
+ image2 = new Image;
+
+ image2.src="intro1.gif";
+
+}
+
+if (version == "n3")
+
+{  
+
+ image3b = new Image; 
+
+ image3b.src= "tools2.gif";      
+
+ image3 = new Image; 
+
+ image3.src = "tools1.gif";
+
+}
+
+if (version == "n3")
+
+{  
+
+ image4b = new Image; 
+
+ image4b.src = "resources2.gif";      
+
+ image4 = new Image; 
+
+ image4.src = "resources1.gif";
+
+}
+
+if (version == "n3")
+
+{  
+
+ image5b = new Image; 
+
+ image5b.src="contact2.gif";      
+
+ image5 = new Image; 
+
+ image5.src = "contact1.gif";
+
+}
+
+function img_act(imgName)
+
+{
+
+        if (version == "n3") 
+
+        {
+
+        imgOn = eval(imgName + "b.src");
+
+        document [imgName].src = imgOn;
+
+        }
+
+}
+
+function img_inact(imgName)
+
+{
+
+        if (version == "n3")
+
+        {
+
+        imgOff = eval(imgName + ".src");
+
+        document [imgName].src = imgOff;
+
+        }
+
+}
+
+//-->
+
+
+
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#002277" vlink="#009900" alink="#FF6600">
+<!-- Ansible ./roles/mw_wwwdot_web/templates/injection-text-afsretirement.j2 -->
+<div id="afsretirement" style="background-color:yellow; color:orange; text-align:center; width:100%">
+  This page is hosted on AFS file server space, which is being shut down on November&nbsp;13,&nbsp;2018.
+  If you are seeing this message, your service provider needs to take steps now.
+  Visit <a href="https://afs.unc.edu/">afs.unc.edu</a> for more information.
+</div>
+<!-- End of injection-text-afsretirement -->
+
+
+<blockquote>&nbsp;
+<table ALIGN=LEFT BORDER=0 CELLSPACING=0 CELLPADDING=0 valign="top" >
+<tr>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="120" HEIGHT="100%" BACKGROUND="indexbg.gif" BORDER="0"><img SRC="menu.gif" ALT="CARstat menu" >
+<hr><a href="index.html" onMouseOver="img_act('image1'); window.status='Back to the CARstat front page'; return true" onMouseOut="img_inact('image1')"><img SRC="home1.gif" NAME="image1" ALT="Home" BORDER=0 ></a><a href="intro.html" onMouseOver="img_act('image2'); window.status='An introduction to CARstat'; return true" onMouseOut="img_inact('image2')"><img SRC="intro1.gif" NAME="image2" ALT="introduction" BORDER=0 ></a><img SRC="tools3.gif" ALT="Tools" ><a href="resources.html" onMouseOver="img_act('image4'); window.status='Links to other valuable on-line and off-line resources'; return true" onMouseOut="img_inact('image4')"><img SRC="resources1.gif" NAME="image4" ALT="resources" BORDER=0 ></a><a href="contact.html" onMouseOver="img_act('image5'); window.status='How you can contact us'; return true" onMouseOut="img_inact('image5')"><img SRC="contact1.gif" NAME="image5" ALT="contact us" BORDER=0 ></a>
+<hr></td>
+
+<td VALIGN=TOP WIDTH="27" HEIGHT="100%" BACKGROUND="shadow.gif" border="0">&nbsp;</td>
+
+<td VALIGN=TOP BGCOLOR="#FFFFFF" border="0"><a NAME="tools"></a>
+<center><img SRC="carstat2.gif" ALT="CarStat: Statistical tools for computer-assisted reporting" >
+<br>
+<hr size="2" width="85%"></center>
+
+<center>
+<h1>
+Statistical Tools</h1></center>
+
+<ul>
+<li>
+<b><font size=+1><a href="tools.html#updating">The <i>USA Today</i> Index</a></font></b><font size=+1><a href="tools.html#updating">&nbsp;</a></font></li>
+
+<li>
+<b><font size=+1><a href="tools.html#chisqu">Chi Square</a></font></b></li>
+
+<li>
+<b><font size=+1><a href="tools.html#hurricane">Getting Ready for a Hurricane</a></font></b></li>
+</ul>
+
+<hr size="2" width="85%">
+<center>
+<p><a NAME="updating"></a><b><font size=+2>Updating the USA TODAY Diversity
+Index</font></b></center>
+
+<blockquote><font size=+0>Phil Meyer and Paul Overberg</font>
+<br><font size=+0>January 2001</font>
+<p><font size=+0>If we want to write about social diversity, we should
+be ready for descriptive challenges. By its nature, diversity can be approached
+from many viewpoints and create much debate about its definition, level
+and pace of change.</font>
+<p><font size=+0>To measure racial and ethnic diversity and capture it
+in a single number, Phil Meyer of the University of North Carolina and
+Shawn McIntosh of USA TODAY created the USA TODAY Diversity Index in 1991.
+It measures the probability that any two people chosen at random from a
+given census area are of different races or ethnicities.</font>
+<p><font size=+0>In 2000, Meyer and Paul Overberg of USA TODAY considered
+ways of updating the index to handle 2000 Census data, in particular the
+new multi-race categories. Below we explain the original index and how
+it has been updated for 2000. We conclude that the changes needed are not
+substantial.</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><b><font size=+1>To calculate the 1990 USA TODAY Diversity Index:</font></b>
+<p><font size=+0>The index uses two basic principles of probability theory:
+(a) to obtain the probability that all of several independent events will
+occur, multiply their separate probabilities and (b) to obtain the probability
+that at least one of several independent events will occur, add their separate
+probabilities.</font>
+<p><font size=+0>Example: Flip two coins. The probability of getting heads
+on the first AND tails on the second is .5 * .5 = .25. Flip one coin. The
+probability of getting heads OR tails is .5 + .5 = 1.</font>
+<p><font size=+0>Applying it to the diversity index:</font>
+<ol>
+<li>
+<font size=+0>For each race, calculate its percentage frequency in the
+area, with the "other race" category removed from the base. This has the
+same effect as assigning "other race" to the population in proportion to
+the presence of the officially designated categories.</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>Convert the percentage to a decimal and treat it as the probability
+that ONE person chosen at random will be of that race.</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>Square that percentage. The probability that TWO people chosen
+at random will be of that particular race is the single probability multiplied
+by itself (squared).</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>Sum the squared probabilities for the separate races. This
+is the probability that two people are of the same race.</font></li>
+
+<br>&nbsp;
+<ol><font size=+0>&nbsp;Prob (race) = White<sup>2</sup> + Black<sup>2</sup>
++ AmInd<sup>2</sup> + A-PI</font><sup><font size=-1>2</font></sup>
+<br>&nbsp;</ol>
+
+<li>
+<font size=+0>Because Hispanic origin is a separate Census question, the
+probability that someone is Hispanic or not must be figured separately.
+Figure percentages of the Hispanic and non-Hispanic population, square
+each percentage and add them.&nbsp;</font></li>
+
+<p><br><font size=+0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Prob (Hisp) = Hisp<sup>2</sup> + non-Hisp<sup>2</sup></font>
+<br>&nbsp;
+<li>
+<font size=+0>Multiply the sum of the racial probabilities and ethnic probabilities.
+This is the probability that any two people are the SAME by race and ethnicity.&nbsp;</font></li>
+
+<p><br><font size=+0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Prob (race) x Prob (Hisp)</font>
+<br>&nbsp;
+<li>
+<font size=+0>Subtract this probability from 1 (100%) to get the probability
+that your two random people are DIFFERENT.<a NAME="return1" href="tools.html#1"></a><a NAME="return1" href="tools.html#1"></a><a NAME="return1" href="tools.html#1"></a><a NAME="return1" href="tools.html#1"></a><sup><a href="tools.html#1" name="return1">1</a></sup></font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>In a final step to simplify presentation, multiply by 100
+to get an integer.</font></li>
+</ol>
+<font size=+0>USA TODAY applied this formula to 1980 and 1990 Census data.<sup><a href="tools.html#2">2<a NAME="return2"></a></a></sup>&nbsp;
+It found the U.S. index was 40, a 20% increase from 1980. The USA TODAY
+study found significant gains in diversity in every region and all but
+five states.<a NAME="return3" href="tools.html#3"></a><a NAME="return3" href="tools.html#3"></a><a NAME="return3" href="tools.html#3"></a><a NAME="return3" href="tools.html#3"></a><sup><a href="tools.html#3" name="return3">3</a></sup></font>
+<p><font size=+0>USA TODAY used states, metropolitan areas and cities,
+but the analysis can be done on any level at which diversity is worth examining:
+counties, neighborhoods (census tracts) or locally defined areas such as
+school districts, wards or precincts.</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><b><font size=+1>Update for 2000 Census</font></b>
+<p><font size=+0>The 2000 Census allowed respondents to choose more than
+one race.<sup><a href="tools.html#4">4<a NAME="return4"></a></a></sup>It also split
+the Asian-Pacific Islander category into Asian and Native Hawaiian-Other
+Pacific Islander categories.</font>
+<p><font size=+0>The Asian-Pacific Islander split is handled simply by
+treating each new category as a separate term in the index. As before,
+percentages are figured with the "other" category eliminated.</font>
+<p><font size=+0>Coping with the multi-race option is less obvious. Four
+major options were considered:</font>
+<ol>
+<li>
+<font size=+0>Each of the 63 multi-race possibilities could be treated
+as a separate race. Doing the same separately for both Hispanics and non-Hispanics
+would produce 126 categories for which to calculate percentages and probabilities.
+This would make capture every conceivable kind of diversity. For instance,
+it would treat Tiger Woods, a self-described "cablinasian" who presumably
+checked white (Caucasian), black, American Indian and Asian on his Census
+form -- as distinct (diverse) from his white-black-American Indian father
+and Asian mother. Logistically, this bore little appeal but it was intuitively
+appealing.</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>A category of "two or more races" could represent all multi-race
+people, and a single percentage and probability could be calculated as
+if it were just another race. This is a simpler alternative. But it would
+treat a black-white mixture and an Asian-American Indian as members of
+the same race even though they had no racial identity in common.</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>Probabilities could be calculated on the basis of the five
+basic race groups as before. The fact that they now add to more than 100
+because some people report more than one race would be ignored. The effect
+would be to count a random pair as diverse only if the two members differed
+on every racial characteristic. Thus Tiger Woods paired with either parent
+would be part of a non-diverse match. The justification would be that the
+new method of classifying race reveals common characteristics that were
+hidden before.&nbsp;</font></li>
+
+<br>&nbsp;
+<li>
+<font size=+0>We chose a fourth option which has the opposite effect. It
+maximizes diversity by letting mixed-race people default to diversity instead
+of sameness as in No. 2.&nbsp; To achieve it, we modify the 1990 formula
+to treat Asians and Hawaiians as separate races and make no other changes.
+Since there is no provision for mixed-race persons in this scheme, their
+pairings are classed as diverse by default.</font></li>
+</ol>
+<font size=+0>In a test against a composite of areas in the American Community
+Survey with a population of 8 million, we found that methods 3 and 4, although
+conceptually quite different, produce similar results. The index was .584
+with method 3 and .594 with method 4. The small difference is explained
+by the low incidence of persons reporting multiple racial categories.</font>
+<p><font size=+0>Our conceptual justification for counting all multiple-race
+pairs as representing diversity, even for pairs of identical mix, is that
+these individuals are diverse in themselves. Consider a random pair where
+both members are Black-Asian.&nbsp; This pair would count as diverse because
+each member has at least one racial characteristic that differs from at
+least one characteristic in the other. This method closely approximates
+the result in Option 1 above. It also carries the appeal of leaving the
+equation basically unchanged from its 1990 form.</font>
+<p><font size=+0>This is the method we will use. To restate, the USA TODAY
+Diversity Index for 2000 is calculated:</font>
+<blockquote>&nbsp;
+<br><font size=+0>Diversity = 1-((W<sup>2</sup> + B<sup>2</sup> + AmIndI<sup>2</sup>
++ A<sup>2</sup>+PI<sup>2</sup>) * (H<sup>2</sup> + Non-H<sup>2 </sup>))</font></blockquote>
+<font size=+0>In a simple example just of racial diversity, imagine a city
+of 100,000 in 1990. (For simplicity, these and all calculations below present
+diversity scores as a decimal, omitting the final step of multiplying by
+100.)</font>
+<br>&nbsp;
+<br>&nbsp;
+<center><table BORDER CELLPADDING=2 WIDTH="482" BORDERCOLOR="#000000" >
+<tr>
+<td VALIGN=TOP COLSPAN="6" HEIGHT="19"><b><font size=+0>1990 index</font></b></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="30%" HEIGHT="19"></td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="19">
+<div align=right><font size=+0>White</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="19">
+<div align=right><font size=+0>Black</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="12%" HEIGHT="19">
+<div align=right><font size=+0>AmInd</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="19">
+<div align=right><font size=+0>A-PI</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="19">
+<div align=right><font size=+0>Diversity Index</font></div>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="30%" HEIGHT="18"><font size=+0>Total</font></td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18">
+<div align=right><font size=+0>80,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18">
+<div align=right><font size=+0>15,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="12%" HEIGHT="18">
+<div align=right><font size=+0>-</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>5,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18"></td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="30%" HEIGHT="18"><font size=+0>Prob of two same
+race</font></td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18">
+<div align=right><font size=+0>0.64</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18">
+<div align=right><font size=+0>0.023</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="12%" HEIGHT="18">
+<div align=right><font size=+0>0</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>0.003</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="15%" HEIGHT="18">
+<div align=right><font size=+0>0.335</font></div>
+</td>
+</tr>
+</table></center>
+
+<p><font size=+0>In 2000, it still has 100,000 people, but 5,000 people
+have reported more than one race. Below, we compute the index two ways:</font>
+<blockquote>&nbsp;
+<br><font size=+0>-- Treating multi-race people as a racial category.</font>
+<p><font size=+0>-- Letting them default to the diversity side of the division.</font></blockquote>
+
+<center><table BORDER CELLPADDING=2 WIDTH="597" BORDERCOLOR="#000000" >
+<tr>
+<td VALIGN=TOP COLSPAN="8" HEIGHT="19"><b><font size=+0>2000 index</font></b></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="23%" HEIGHT="19"></td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="19">
+<div align=right><font size=+0>White</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="19">
+<div align=right><font size=+0>Black</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>AmInd</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>NatH</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>A-PI</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>2+ races</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>Diversity Index</font></div>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="23%" HEIGHT="18">
+<div align=right><font size=+0>Total</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>78,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="18">
+<div align=right><font size=+0>13,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>-</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>-</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>4,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>5,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18"></td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="23%" HEIGHT="18">
+<div align=right><font size=+0>Prob of two same race</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>0.608</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="18">
+<div align=right><font size=+0>0.017</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0.002</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0.003</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0.371</font></div>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="8" HEIGHT="19"></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="23%" HEIGHT="19"></td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="19">
+<div align=right><font size=+0>White</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="19">
+<div align=right><font size=+0>Black</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>AmInd</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>NatH</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>A-PI</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>2+ races</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="19">
+<div align=right><font size=+0>Diversity Index</font></div>
+</td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="23%" HEIGHT="18">
+<div align=right><font size=+0>Total</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>78,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="18">
+<div align=right><font size=+0>13,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>-</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>-</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>4,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>5,000</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18"></td>
+</tr>
+
+<tr>
+<td VALIGN=BOTTOM WIDTH="23%" HEIGHT="18">
+<div align=right><font size=+0>Prob of two same race</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="13%" HEIGHT="18">
+<div align=right><font size=+0>0.608</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="11%" HEIGHT="18">
+<div align=right><font size=+0>0.017</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0.002</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>X</font></div>
+</td>
+
+<td VALIGN=BOTTOM WIDTH="10%" HEIGHT="18">
+<div align=right><font size=+0>0.373</font></div>
+</td>
+</tr>
+</table></center>
+
+<p><font size=+0>Counting multi-race respondents as automatically diverse
+creates very little difference in this 5% multi-race scenario, which Census
+Bureau studies indicate will be a high rate for most areas of this size.</font>
+<p><font size=+0>We can see more clearly the effect of excluding multi-race
+respondents from the calculation by analyzing the Census Bureau’s 1999
+American Community Survey data. It included the multi-race checkoff just
+as it was offered on the Census 2000 form. The ACS was completed by a sample
+of households in 40 communities, including 19 counties whose population
+totals 8.9 million people.</font>
+<p><font size=+0>Combining data for those 19 counties, we calculated a
+diversity index of .593 by including multi-race respondents as a separate
+category and .593 by letting the default to diversity. The Census Bureau
+conducted the ACS in counties with relatively high density to test the
+effects of the multi-race data on its methods. But in this composite 19-county
+area with relatively high diversity, the effect of the automatic treatment
+of multi-race respondents as is nil. This suggests that for states and
+large metros, our choice is sound.</font>
+<p><font size=+0>To test the effect of our method on smaller areas, we
+also calculated a diversity index for 1990 and 1999 for each of those counties.
+For the 1990 calculation, we used the original form of the index and data
+from the 1990 Census. For 1999, we did two calculations. The first used
+the original index and the Census Bureau’s 1999 county population estimates.<sup><a href="tools.html#5">5<a NAME="return5"></a></a></sup>The
+second used the new form of the index (excluding multi-racial respondents)
+and 1999 ACS data.</font>
+<br>&nbsp;
+<center><table BORDER CELLPADDING=7 WIDTH="385" >
+<tr>
+<td VALIGN=TOP WIDTH="179"><b><font size=+0>County</font></b></td>
+
+<td VALIGN=TOP WIDTH="46"><b><font size=+0>1990 Census</font></b></td>
+
+<td VALIGN=TOP WIDTH="44"><b><font size=+0>1999</font></b>
+<br><b><font size=+0>est.</font></b></td>
+
+<td VALIGN=TOP WIDTH="40"><b><font size=+0>1999&nbsp;</font></b>
+<br><b><font size=+0>ACS</font></b></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Bronx County, NY</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.762</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.770</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.783</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>San Francisco County, CA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.663</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.700</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.736</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Tulare County, CA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.559</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.586</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.634</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Yakima County, WA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.473</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.537</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.594</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Pima County, AZ</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.475</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.523</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.558</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Jefferson County, AR</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.504</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.517</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.529</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Madison County, MS</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.503</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.511</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.516</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Broward County, FL</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.404</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.489</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.510</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Rockland County, NY</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.353</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.414</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.438</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Hampden County, MA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.321</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.394</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.422</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Calvert County, MD</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.293</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.371</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.379</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Franklin County, OH</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.319</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.359</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.373</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Multnomah County, OR</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.270</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.341</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.370</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Lake County, IL</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.292</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.349</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.365</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Douglas County, NE</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.266</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.327</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.345</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Black Hawk County, IA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.160</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.187</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.209</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Flathead County, MT</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.060</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.071</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.088</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Sevier County, TN</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.030</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.046</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.084</font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="179"><font size=+0>Schuykill County, PA</font></td>
+
+<td VALIGN=TOP WIDTH="46"><font size=+0>.028</font></td>
+
+<td VALIGN=TOP WIDTH="44"><font size=+0>.065</font></td>
+
+<td VALIGN=TOP WIDTH="40"><font size=+0>.047</font></td>
+</tr>
+</table></center>
+
+<p><font size=+0>These calculations show that the 1999 ACS data reveals
+a slightly higher diversity at most sites than the 1999 estimates, which
+we expect. Only one site show significantly <b>lower</b> diversity in the
+1999 ACS data than in the 1999 estimates. That site, Schuykill County,
+Pa., shows lower black and Hispanic ACS totals than 1999 estimate totals.
+Both groups are less than 1% of the population, and small differences there
+can translate to big changes in percentage-derived measures. In general,
+this detailed county analysis strengthens our confidence in the method
+we have chosen for updating the index.</font>
+<p><font size=+0>We have not tested the index on smaller areas for comparability
+between 1990 and 2000 data. It seems likely that proportionally more diversity
+will be revealed in progressively smaller areas, yielding increasing differences
+between 1990 and 2000 scores on the USA TODAY Diversity Index. This can
+be illustrated by examining an extreme case. Imagine a census block of
+100 people where everyone reported they were white in 1990. In 2000, only
+those same people were living there but half decided they were white-American
+Indian, hoping to take advantage of jobs at a reservation casino nearby.
+The block’s diversity score would vault from 0 to 50, even though all the
+people were the same. Even in this case, the index would be faithfully
+reporting the diversity uncovered by the new data, but any comparison to
+1990 would require at least a footnote.</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<center>
+<p><b><font size=+0>FOOTNOTES</font></b></center>
+
+<ol>
+<li>
+<a NAME="1"></a><font size=+0>In a single equation, the USA TODAY Diversity
+Index was:</font>&nbsp;</li>
+
+<br><font size=+0>Diversity = 1-((W%<sup>2</sup> + B%<sup>2</sup> + AmIndI%<sup>2</sup>
++ A-PI%<sup>2</sup> ) x (H%<sup>2</sup> + non-H%<sup>2
+</sup>))</font>
+<br><font size=+0><a href="tools.html#return1">return to text</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<a NAME="2"></a><font size=+0>It eliminated the racial category of "Other,"
+which showed a high error rate because many who chose this option were
+Hispanics who confused ethnicity with race on the census form. USA TODAY
+dropped those people and figured percentages based on the remaining races.</font></li>
+
+<br><font size=+0><a href="tools.html#return2">return to text</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<a NAME="3"></a><font size=+0>"Analysis puts a number on population mix,"
+USA TODAY, April 11, 1991, Page 10A.</font></li>
+
+<br><font size=+0><a href="tools.html#return3">return to text</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<a NAME="4"></a><font size=+0>All federal agencies must make this switch
+by 2003. See Office of Management and Budget rules and guidelines at <a href="http://www.whitehouse.gov/OMB/fedreg/ombdir15.html">http://www.whitehouse.gov/OMB/fedreg/ombdir15.html</a>
+and <a href="http://www.whitehouse.gov/omb/bulletins/b00-02.html">http://www.whitehouse.gov/OMB/bulletins/b00-02.html</a>&nbsp;</font></li>
+
+<br><font size=+0><a href="tools.html#return4">return to text</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<a NAME="5"></a><font size=+0>"1990 to 1999 Annual Time Series of County
+Population Estimates</font></li>
+
+<br><font size=+0>Race by Hispanic Origin," <a href="http://www.census.gov/population/www/estimates/co_crh.html">http://www.census.gov/population/www/estimates/co_crh.html</a></font>
+<br><font size=+0><a href="tools.html#return5">return to text</a></font></ol>
+
+<center><b>REFERENCES</b></center>
+
+<p>Fay, Robert, Jeffery Passel and J. Gregory Robinson (1988): <i>The Coverage
+of Population in the 1980 Census, </i>US Department of Commerce.&nbsp;
+<p>Meyer, Philip and Shawn McIntosh (1992): "The USA Today Index of Ethnic
+Diversity," <i>International Journal of Public Opinion Research</i>. Spring,
+p. 56.&nbsp;
+<p><i>USA Today</i> (1991): "Analysis puts a number on population mix".
+11 April, p. 10A.&nbsp;
+<p><a href="tools.html#tools">Back to
+tool list</a>
+<br>
+<hr>
+<center><a NAME="chi"></a></center>
+
+<center>
+<h2>
+<a NAME="chisqu"></a>Chi Square Test</h2></center>
+<b>Significance Tests</b>
+<p><i>Problem: Something that seems newsworthy might be a meaningless coincidence.
+If the news can be boiled down to a difference between two numbers, a significance
+test can help you decide whether to take the coincidence possibility seriously.</i>
+<p><b>Comparing two percents: the Chi-Square test.</b>
+<p>Chi square is a test of randomness. Its most common application is comparing
+percents. If they are different, it could be because of some important
+factor or it could be due to chance. The test helps you compare the difference
+you have with the difference that would be expected purely by chance.&nbsp;
+<p>It's traditional to reject the coincidence explanation whenever the
+probability is 0.05 or less (i.e. less than 1 in 20). But there's no law
+against setting your rejection criterion anywhere you want. Think of it
+as the probability that you'll be wrong when you assume that coincidence
+is not the explanation. (This is called "rejecting the null hypothesis.")
+The smaller the significance level, the less probability that you'll make
+that particular error, which statisticians call "Type I error."&nbsp;
+<p>The other kind of error is assuming that concidence <i>is</i> the explanation
+when it's really not. The more you protect yourself from Type I error (by
+setting a low threshold of probability), the greater your risk of making
+this Type II error and missing a good story.&nbsp;
+<p>A finding with a low probability of Type I error is said to be "statistically
+signficant," but "significant" in this sense does not necessarily mean
+important in a substantive sense. Chi Square is sensitive to sample size,
+and so in a large enough sample, all kinds of trivial differences will
+be statistically significant. You still need common sense.&nbsp;
+<p>Example: A newspaper reporter noticed a politically connected law firm
+was more successful than others in getting clients' zoning variances approved
+by the City Council. Council members claimed that it was a coincidence,
+and the law firm just happened to get better cases.&nbsp;
+<br>&nbsp;
+<table BORDER >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT></td>
+
+<td ALIGN=LEFT>P-C Firm&nbsp;</td>
+
+<td ALIGN=LEFT>All Others&nbsp;</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Successful</td>
+
+<td ALIGN=LEFT>76%</td>
+
+<td ALIGN=LEFT>52%</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Not successful&nbsp;</td>
+
+<td ALIGN=LEFT>24%</td>
+
+<td ALIGN=LEFT>48%</td>
+</tr>
+</table>
+Is the difference between 76% and 52% large enough that something other
+than chance is going on here? The Chi Square test compares the observed
+results with the results that would be expected if there was no relationship
+between political-connectedness of the law firm and its success rate, and
+any difference was generated by chance alone.&nbsp;
+<p>The Chi Square calculation is based on raw numbers.&nbsp;
+<br>&nbsp;
+<table BORDER >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Outcome&nbsp;</td>
+
+<td ALIGN=LEFT>P-C Firm&nbsp;</td>
+
+<td ALIGN=LEFT>All Others&nbsp;</td>
+
+<td ALIGN=LEFT>Total</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Successful</td>
+
+<td ALIGN=LEFT><b>166</b></td>
+
+<td ALIGN=LEFT><b>319</b></td>
+
+<td ALIGN=LEFT>485</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Not successful&nbsp;</td>
+
+<td ALIGN=LEFT><b>52</b></td>
+
+<td ALIGN=LEFT><b>300</b></td>
+
+<td ALIGN=LEFT>352</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>Total</td>
+
+<td ALIGN=LEFT>218</td>
+
+<td ALIGN=LEFT>619</td>
+
+<td ALIGN=LEFT>837</td>
+</tr>
+</table>
+There is a shortcut formula for Chi Square in a four-cell table. (We're
+showing nine cells above because we are including the row, column, and
+table totals in the margins. These values are called <i>marginals</i> because
+they are not part of the table but are in its margins.) For purposes of
+calculation, let's label the values:&nbsp;
+<br>&nbsp;
+<table BORDER >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>A</td>
+
+<td ALIGN=LEFT>B</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>C</td>
+
+<td ALIGN=LEFT>D</td>
+</tr>
+</table>
+Chi Square (X<sup>2</sup>) = N * [(A*D) - (B*C)]<sup> 2</sup>
+<br>--------------------------------------&nbsp;
+<br>(A+B) * (C+D) * (A+C) * (B+D)&nbsp;
+<p>The higher the Chi Square Value, the less probable it is. At 3.84, the
+probability is 0.05. (See Fisher's <i>Critical Values of Chi Square</i>
+in the back of almost any statistics book.) Here's an excerpt that applies
+to fourfold tables like the one above.&nbsp;
+<br>&nbsp;
+<table BORDER >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>X<sup>2</sup></td>
+
+<td ALIGN=LEFT>2.71</td>
+
+<td ALIGN=LEFT>3.84</td>
+
+<td ALIGN=LEFT>5.02</td>
+
+<td ALIGN=LEFT>6.63</td>
+
+<td ALIGN=LEFT>7.88</td>
+
+<td ALIGN=LEFT>10.83</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT>P</td>
+
+<td ALIGN=LEFT>0.10</td>
+
+<td ALIGN=LEFT>0.05</td>
+
+<td ALIGN=LEFT>0.025</td>
+
+<td ALIGN=LEFT>0.01</td>
+
+<td ALIGN=LEFT>0.005</td>
+
+<td ALIGN=LEFT>0.001</td>
+</tr>
+</table>
+In this case, Chi Square is 40 and p &lt; .001. The coincidence explanation
+can readily be rejected.&nbsp;
+<p>This equation is easier to do by hand than it looks. You need a calculator
+that allows parenthetical expressions to determine the order of operations.
+Once you have done the top part, just divide the result by each of the
+marginal totals, one at a time. That saves you from having to deal with
+the big hairy number that results from doing the multiplication in the
+denominator, and it leads to the same result.&nbsp;
+<p>You can easily create a spreadsheet to do problems like this one. And
+statistical programs like SAS and SPSS will do both the calculation and
+the table look-up for you.&nbsp;
+<p>The general formula for chi square is [Sigma] (O - E)<sup>2 </sup>/
+E&nbsp;
+<p>which means that for each cell in the table, you subtract the expected
+value from the observed value, square the result, and divide by the expected
+value. Then you repeat this operation for each cell and sum the results.&nbsp;
+<p>What do we mean by expected value? The mathematical expectancy for any
+cell in a row-and-column (two-way) table is the row total times the column
+total divided by the table total. For cell A in the example above (number
+of successful cases argued by the politically connected firm) the expected
+value is 218 (the column total) times 485 (the row total) divided by 837
+(the table total). The result, 126, is what would be expected if the cell
+values from the given marginals were determined by chance alone.&nbsp;
+<p>For tables larger than two by two, the p-value depends on its degrees
+of freedom, which means simply the number of cells whose values you have
+to know in order to infer the values of all of the cells (given the marginals).
+The easy formula for degrees of freedom is the number of rows mines one
+times the number of columns minus one: (R-1)*(C-1). For our two-by-two
+example, it's (2-1)*(2-1) = 1*1 = 1.&nbsp;
+<p>Chi Square is an approximation, and the method was worked out before
+there were computers. Some newer versions of SPSS and other programs will
+do the heavy crunching to calculate the exact probability of getting a
+difference as great or greater than the one in the data.&nbsp;
+<p>Both Chi Square and exact probability tests have an advantage that journalists
+can appreciate: they are <i>nonparametric</i> tests, meaning that they
+require no assumptions about the nature of the underlying distribution
+of your variables in the population being examined. The trade-off is that
+the test is not as sensitive as other tests that do assume certain characteristics
+in the underlying population parameters.&nbsp;
+<p><b><i>--Barbara Hansen and Phil Meyer</i></b>
+<p><a href="tools.html#tools">Back to
+tool list</a>
+<br>
+<hr WIDTH="100%">
+<center><a NAME="hurricane"></a>
+<br><b><font size=+2>Getting ready for a hurricane</font></b></center>
+
+<p>Natural disasters like hurricanes, floods, earthquakes and such are
+hard to predict. But chances are, if your area has been hit before, it’ll
+be hit again someday. And, as the saying goes, chance favors the prepared
+mind: Smart computer-assisted reporters should prepare even for such unlikely
+events by acquiring and getting comfortable with the databases they’ll
+need if – no, when – the unthinkable does happen.&nbsp;
+<p>Here are some tips based on my experience at The Miami Herald dealing
+with the aftermath of Hurricane Andrew in 1992. Obviously, different areas
+are vulnerable to different kinds of disasters, but many of the same principles
+hold whether your area is along the coast, in a Midwest flood plain, or
+near a fault line. Best of all, most of these suggestions are for data
+that’s useful even if there isn’t a disaster.&nbsp;
+<br>&nbsp;
+<ul>
+<li>
+Get a copy of your property tax roll, or any other real estate database
+that has detailed information (value, size, year built, location, etc.)
+about each property in your area. If you do get hit, and then in the aftermath
+can get a database describing the damage at each property, you can merge
+them to produce a profile of the damage, map it, etc.</li>
+</ul>
+
+<ul>
+<li>
+Learn a good mapping program, like ArcView or Atlas*GIS or MapInfo. Then
+get a detailed map file of your area from your planning office or whomever
+has some local GIS ability. You'll want this for mapping damage.</li>
+</ul>
+
+<ul>
+<li>
+In advance of disaster, prepare a disaster history database of your area.
+Several years before Andrew hit, I built a hurricane database with information
+on every storm that had hit Florida since 1900. It included date, category,
+damage amount, number killed/injured, etc. We used it for a hurricane season
+information graphic showing the storm tracks by decade, and by months (all
+June storms, all July storms, etc.), plus a lot of other information about
+hurricane climatology. After Andrew, we dusted it off, slapped in the new
+track and some new text, and ran it again.</li>
+</ul>
+
+<ul>
+<li>
+Be ready with "could have been worse" data. In other words, gather the
+information you need to be able to say how vulnerable your area is in terms
+of number of people, buildings and dollars are at risk across your area.
+Then, when disaster hits, you can make valid estimates of the percentage
+that actually was affected. After Andrew, I did an analysis that showed
+if the storm had wobbled in just 20 miles farther north -- a meteorological
+hairsbreadth -- the damage would have tripled. I did it by totaling the
+population and property value in mile-wide east-west strips all up the
+Florida coast, then calculating the total for each potential 20-mile wide
+hurricane path.&nbsp; It took just a could of hours because I already had
+detailed census information and property tax values.</li>
+</ul>
+
+<ul>
+<li>
+Find out how damage assessment will be done in your area, if you are hit.
+Which agency would handle something like that? (Don't count on the Red
+Cross damage assessment files to be very useful for CAR work. We got their
+files, but it turned out not to be really a database, but rather just descriptive
+information.) Ideally, you want house-by-house data; chances are, it will
+be done by your local building and zoning department, though maybe by FEMA.</li>
+</ul>
+
+<ul>
+<li>
+If you think building standards might be an after-disaster issue (as they
+turned out to be in Miami) then start laying the groundwork for getting
+the files of building inspections. We were able to document instances of
+inspectors supposedly inspecting hundreds of homes per day. Even better
+than waiting for the disaster, do that story in advance and maybe you can
+keep a disaster from being worse.</li>
+</ul>
+
+<ul>
+<li>
+Get those local campaign contribution files up to date. If there is a question
+about construction quality, you'll want to document the importance of the
+building industry in local elections, particularly of those officials who
+decide on building codes.&nbsp;</li>
+</ul>
+<b><i>--Steve Doig</i></b>
+<br><b><i>Cronkite School of Journalism</i></b>
+<br><b><i>Arizona State University</i></b>
+<p><a href="tools.html#tools">Back to
+tool list</a>
+<center>
+<hr size=2 width="400"></center>
+
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 BGCOLOR="#FFFFFF" >
+<tr>
+<td BORDER="0"><a href="index.html"><img SRC="home1.gif" ALT="home" BORDER=0 height=40 width=80></a></td>
+
+<td><a href="intro.html"><img SRC="intro1.gif" ALT="introduction" BORDER=0 height=40 width=80></a></td>
+
+<td><img SRC="tools3.gif" ALT="tools" BORDER=0 height=40 width=80></td>
+
+<td><a href="resources.html"><img SRC="resources1.gif" ALT="resources" BORDER=0 height=40 width=80></a></td>
+
+<td><a href="contact.html"><img SRC="contact1.gif" ALT="contact us" BORDER=0 height=40 width=80></a></td>
+</tr>
+</table></center>
+
+<br>&nbsp;
+<br>&nbsp;
+<p><font color="#CC0000"><font size=-1>Page created by:</font></font>
+<br><font size=+1><a href="http://www.unc.edu/~snowdog">Greg Makris</a></font>
+<br><a href="http://sunsite.unc.edu/jomc">UNC-CH School of Journalism and
+Mass Communication</a>
+<br>&copy; 1998<i>Latest Revision </i>1/28/01 by PMK&nbsp;</blockquote>
+</td>
+</tr>
+</table>
+</blockquote>
+
+</body>
+</html>
